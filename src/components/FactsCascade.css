@@ -85,6 +85,15 @@
   max-width: 540px;
 }
 
+.fact-row__fact--poem {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(0.95rem, 1.4vw, 1.08rem);
+  line-height: 1.7;
+  max-width: 580px;
+  font-style: italic;
+}
+
 @media (max-width: 760px) {
   .fact-row, .fact-row--flip {
     grid-template-columns: 1fr;

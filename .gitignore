@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Raw, unoptimized source photos - run npm run optimize-images instead of committing these
+raw-images/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

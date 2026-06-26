@@ -43,7 +43,7 @@ export default function Hero() {
       <div className="hero__scrim" />
 
       <div className="container hero__content">
-        <p className="eyebrow hero__eyebrow">Nexus Africa · Nairobi creatives collective</p>
+        <p className="eyebrow hero__eyebrow">Nexus Africa · A creatives collective</p>
         <h1 className="hero__title">
           Africa, told<br />by Africans.
         </h1>

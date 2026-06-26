@@ -24,7 +24,7 @@ export default function Footer() {
 
         <div className="footer__col">
           <p className="eyebrow">Get in touch</p>
-          <a href="https://wa.me/254700000000" target="_blank" rel="noopener noreferrer">WhatsApp us</a>
+          <a href="https://wa.me/254768241700" target="_blank" rel="noopener noreferrer">WhatsApp us</a>
           <a href="mailto:hello@nexusafrica.art">hello@nexusafrica.art</a>
           <span className="footer__muted">Nairobi, Kenya</span>
         </div>
@@ -39,7 +39,7 @@ export default function Footer() {
 
       <div className="container footer__bottom">
         <span>Nexus Africa © {new Date().getFullYear()}</span>
-        <span className="footer__muted">A Robin Inc. community initiative</span>
+        <span className="footer__muted">Terms & Conditions Apply</span>
       </div>
     </footer>
   );
