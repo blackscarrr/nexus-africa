@@ -1,6 +1,6 @@
 import { useCart } from '../context/CartContext';
 
-const WHATSAPP_NUMBER = '254700000000'; // TODO: replace with Nexus Africa's real WhatsApp business number
+const WHATSAPP_NUMBER = '254768241700'; // TODO: replace with Nexus Africa's real WhatsApp business number
 
 function buildWhatsAppMessage(items, totalPrice) {
   const lines = items.map(

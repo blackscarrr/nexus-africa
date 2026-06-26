@@ -5,6 +5,7 @@ import './FactsCascade.css';
 function FactRow({ item, index }) {
   const ref = useReveal();
   const flip = index % 2 === 1;
+  const isPoem = item.type === 'poem';
 
   return (
     <div
@@ -14,9 +15,20 @@ function FactRow({ item, index }) {
       <div className="fact-row__media">
         <div className="fact-row__semi" style={{ backgroundImage: `url(${item.image})` }} />
       </div>
-      <div className={`fact-row__text fact-row__text--${item.color}`}>
+      <div className={`fact-row__text fact-row__text--${item.color} ${isPoem ? 'fact-row__text--poem' : ''}`}>
         <span className="fact-row__index">{String(index + 1).padStart(2, '0')}</span>
-        <p className="fact-row__fact">{item.fact}</p>
+        {isPoem ? (
+          <p className="fact-row__fact fact-row__fact--poem">
+            {item.lines.map((line, i) => (
+              <span key={i}>
+                {line === '' ? <br /> : line}
+                {i < item.lines.length - 1 && <br />}
+              </span>
+            ))}
+          </p>
+        ) : (
+          <p className="fact-row__fact">{item.fact}</p>
+        )}
       </div>
     </div>
   );

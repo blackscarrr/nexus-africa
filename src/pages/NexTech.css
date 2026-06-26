@@ -11,34 +11,23 @@
   color: var(--ink-soft);
   font-size: 1rem;
   line-height: 1.7;
+  margin-bottom: 28px;
 }
 
-.nextech-partner {
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-  padding: 0 var(--gutter) 56px;
-  border-bottom: 1px solid var(--line);
-  margin-bottom: 64px;
+.nextech-hero .pill-btn.solid {
+  margin-bottom: 8px;
 }
-.nextech-partner__eyebrow {
-  font-family: var(--font-caption);
-  font-size: 0.78rem;
-  color: var(--ink-soft);
-  letter-spacing: 0.04em;
-}
-.nextech-partner__name {
-  font-family: var(--font-caption);
-  font-weight: 600;
-  font-size: 1rem;
-  color: var(--teal);
+.nextech-hero .pill-btn.solid:hover {
+  background: var(--teal);
+  border-color: var(--teal);
 }
 
 .nextech-programs {
   display: flex;
   flex-direction: column;
   gap: 72px;
-  padding-bottom: 72px;
+  padding: 72px 0;
+  border-top: 1px solid var(--line);
 }
 
 .nextech-program {
