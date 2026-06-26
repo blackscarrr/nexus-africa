@@ -10,13 +10,13 @@
  * How it works:
  *   1. Put your raw, full-size photos into:  raw-images/<category>/
  *   2. Run:  node scripts/optimize-images.js <category>
- *   3. Resized, compressed copies land in:   public/images/<category>/
+ *   3. Resized, compressed copies land in:   images/<category>/
  *      (filenames are kept the same, just the file contents are optimized)
  *
  * Example:
  *   raw-images/artists/rose-mwangi.jpg
  *   -> node scripts/optimize-images.js artists
- *   -> public/images/artists/rose-mwangi.jpg  (resized + compressed)
+ *   -> images/artists/rose-mwangi.jpg  (resized + compressed)
  */
 import sharp from 'sharp';
 import fs from 'fs';
@@ -80,5 +80,5 @@ if (files.length === 0) {
     const afterKb = (fs.statSync(outputPath).size / 1024).toFixed(0);
     console.log(`${file}: ${beforeKb}KB -> ${path.basename(outputPath)}: ${afterKb}KB`);
   }
-  console.log(`\nDone. ${files.length} image(s) optimized into public/images/${category}/`);
+  console.log(`\nDone. ${files.length} image(s) optimized into images/${category}/`);
 })();
