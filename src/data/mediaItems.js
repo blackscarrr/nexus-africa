@@ -5,7 +5,7 @@ export const mediaItems = [
     title: 'Coop  Bank SideAlley',
     location: 'Nairobi  Valey, Kenya',
     credit: 'Paul Wambua',
-    image: 'public/images/media/coop-alley.jpeg',
+    image: 'images/media/coop-alley.jpeg',
   },
   {
     id: 'media-002',
@@ -13,7 +13,7 @@ export const mediaItems = [
     title: 'NCBA Kenya HQ',
     location: 'Nairobi, Kenya',
     credit: 'Albert Ojwang',
-    image: 'public/images/media/NCBA.jpeg',
+    image: 'images/media/NCBA.jpeg',
   },
   {
     id: 'media-003',
@@ -21,7 +21,7 @@ export const mediaItems = [
     title: 'Sagana Vlog: Holiday in the Sun',
     location: 'Sagana, Kenya',
     credit: 'Victor Maina',
-    image: 'public/images/media/nokras-gate.jpeg',
+    image: 'images/media/nokras-gate.jpeg',
   },
   {
     id: 'media-004',
@@ -29,7 +29,7 @@ export const mediaItems = [
     title: 'CUK Wifi Grounds',
     location: 'Karen, Kenya',
     credit: 'Amani Wekesa',
-    image: 'public/images/media/cuk-landscape.jpeg',
+    image: 'images/media/cuk-landscape.jpeg',
   },
   {
     id: 'media-005',
@@ -37,7 +37,7 @@ export const mediaItems = [
     title: 'Up Town Nairobi',
     location: 'Nairobi, Kenya',
     credit: 'Juma Bakari',
-    image: 'public/images/media/kise-day.jpeg',
+    image: 'images/media/kise-day.jpeg',
   },
   {
     id: 'media-006',
@@ -45,7 +45,7 @@ export const mediaItems = [
     title: 'Nairobi Nightlife',
     location: 'Nairobi, Kenya',
     credit: 'Rose Mwangi',
-    image: 'public/images/media/kise-night.jpeg',
+    image: 'images/media/kise-night.jpeg',
   },
   {
     id: 'media-007',
@@ -53,7 +53,7 @@ export const mediaItems = [
     title: 'Nation Media Group Headquarters',
     location: 'Nairobi, Kenya',
     credit: 'Nexus Media Team',
-    image: 'public/images/media/nationmedia.jpeg',
+    image: 'images/media/nationmedia.jpeg',
   },
   {
     id: 'media-008',
@@ -61,6 +61,6 @@ export const mediaItems = [
     title: 'CUK Aerial View',
     location: 'Nairobi, Kenya',
     credit: 'Kevo Otieno',
-    image: 'public/images/media/cuk-aerial.jpeg',
+    image: 'images/media/cuk-aerial.jpeg',
   },
 ];

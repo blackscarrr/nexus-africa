@@ -6,7 +6,7 @@ const PROGRAMS = [
     label: 'Hackathon',
     title: 'A weekend, a room, and a problem worth solving.',
     body: 'Run twice a year, open to anyone building — artists included. No pitch decks required, just working software by Sunday.',
-    image: 'public/images/community/tech.jpeg',
+    image: 'images/community/tech.jpeg',
   },
   {
     label: 'Reading list',
