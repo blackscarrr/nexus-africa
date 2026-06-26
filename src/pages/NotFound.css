@@ -1,0 +1,16 @@
+.not-found {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 80px;
+}
+.not-found h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+.not-found p:not(.eyebrow) {
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+}

@@ -1,0 +1,86 @@
+/* ============================================
+   NEXUS AFRICA — DESIGN TOKENS
+   Editorial art-world aesthetic, African-rooted palette.
+   No pure black, no pure white — warm bone / warm ink instead.
+   ============================================ */
+
+:root {
+  /* ---- Light mode (default) ---- */
+  --bg: #FAF6F0;           /* warm bone */
+  --bg-raised: #F2ECE1;    /* slightly deeper bone, for cards */
+  --ink: #211C17;          /* warm near-black, not pure black */
+  --ink-soft: #534A40;     /* secondary text */
+  --line: rgba(33, 28, 23, 0.12);
+
+  --red: #B33A2E;          /* Maasai red */
+  --teal: #1F6F78;         /* deep teal */
+  --amber: #E0A33C;        /* amber */
+  --cobalt: #2C4A8C;       /* electric cobalt — sparing use */
+
+  --red-soft: #E8C9C3;
+  --teal-soft: #C7DEDF;
+  --amber-soft: #F3DFB3;
+  --cobalt-soft: #C9D2E6;
+
+  --surface-on-accent: #FAF6F0;
+
+  /* shadows tuned for warm light bg */
+  --shadow-sm: 0 1px 2px rgba(33, 28, 23, 0.06);
+  --shadow-md: 0 8px 24px rgba(33, 28, 23, 0.10);
+  --shadow-lg: 0 24px 64px rgba(33, 28, 23, 0.16);
+
+  /* ---- Type ---- */
+  --font-display: 'Syne', 'Helvetica Neue', sans-serif;
+  --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-caption: 'Inter', sans-serif;
+
+  /* ---- Layout ---- */
+  --max-width: 1320px;
+  --gutter: clamp(20px, 5vw, 64px);
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 24px;
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 0.2s;
+  --dur-med: 0.5s;
+  --dur-slow: 0.9s;
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #19150F;           /* warm ink, not pure black */
+  --bg-raised: #241F17;
+  --ink: #F3ECDF;          /* warm bone text */
+  --ink-soft: #BBAF9D;
+  --line: rgba(243, 236, 223, 0.14);
+
+  --red: #D85A4A;
+  --teal: #3F9CA6;
+  --amber: #EFC066;
+  --cobalt: #6E8AD4;
+
+  --red-soft: #3A211D;
+  --teal-soft: #1C3438;
+  --amber-soft: #3A2F1A;
+  --cobalt-soft: #232E4A;
+
+  --surface-on-accent: #19150F;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.55);
+
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

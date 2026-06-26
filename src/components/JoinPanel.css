@@ -1,0 +1,95 @@
+.join-panel {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  min-height: 420px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin: 0 var(--gutter);
+  box-shadow: var(--shadow-lg);
+}
+
+.join-panel__visual {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 48px;
+  isolation: isolate;
+}
+
+.join-panel__tint {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(33,28,23,0.15), rgba(33,28,23,0.78));
+  transition: background var(--dur-med) var(--ease);
+  z-index: 0;
+}
+.join-panel--red .join-panel__tint { background: linear-gradient(180deg, rgba(179,58,46,0.18), rgba(70,20,15,0.82)); }
+.join-panel--teal .join-panel__tint { background: linear-gradient(180deg, rgba(31,111,120,0.2), rgba(13,45,49,0.82)); }
+.join-panel--amber .join-panel__tint { background: linear-gradient(180deg, rgba(224,163,60,0.2), rgba(70,49,16,0.82)); }
+
+.join-panel__visual:hover .join-panel__tint {
+  background: linear-gradient(180deg, rgba(33,28,23,0.05), rgba(33,28,23,0.6));
+}
+
+.join-panel__visual-text {
+  position: relative;
+  z-index: 1;
+  color: #F3ECDF;
+}
+.join-panel__visual-text .eyebrow { color: rgba(243,236,223,0.75); }
+.join-panel__visual-text h3 {
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  margin: 10px 0 14px;
+  color: #FAF6F0;
+}
+.join-panel__body {
+  color: rgba(243,236,223,0.88);
+  max-width: 480px;
+}
+
+.join-panel__action {
+  background: var(--bg-raised);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+.join-panel__field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 8px 6px 20px;
+  flex-wrap: wrap;
+}
+.join-panel__field svg { color: var(--ink-soft); flex-shrink: 0; }
+.join-panel__field input {
+  flex: 1;
+  min-width: 120px;
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  padding: 10px 0;
+  outline: none;
+}
+
+.join-panel__success {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 880px) {
+  .join-panel {
+    grid-template-columns: 1fr;
+    margin: 0 calc(var(--gutter) / 1.5);
+  }
+  .join-panel__visual, .join-panel__action { padding: 32px 28px; }
+}

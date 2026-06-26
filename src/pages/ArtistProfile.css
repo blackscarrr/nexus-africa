@@ -1,0 +1,112 @@
+.artist-profile__head {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 64px;
+  align-items: center;
+  padding: 100px var(--gutter) 80px;
+}
+
+.artist-profile__photo {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.artist-profile__info h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  margin: 14px 0 20px;
+}
+
+.artist-profile__bio {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+
+.artist-profile__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.artist-profile__social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+.artist-profile__social-btn:hover {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--surface-on-accent);
+}
+
+.artist-profile__works {
+  padding: 40px var(--gutter) 90px;
+  border-top: 1px solid var(--line);
+}
+.artist-profile__works > .eyebrow {
+  display: block;
+  margin: 48px 0 24px;
+}
+
+.artist-profile__works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.artist-profile__work {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--ink);
+}
+.artist-profile__work-image {
+  height: 200px;
+  border-radius: var(--radius-md);
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--dur-fast) var(--ease);
+}
+.artist-profile__work:hover .artist-profile__work-image {
+  transform: translateY(-4px) scale(1.02);
+}
+.artist-profile__work span:first-of-type {
+  font-weight: 600;
+  margin-top: 4px;
+}
+.artist-profile__work-price {
+  font-family: var(--font-caption);
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.artist-profile__back {
+  padding: 0 var(--gutter) 90px;
+}
+
+@media (max-width: 720px) {
+  .artist-profile__head {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 80px var(--gutter) 56px;
+  }
+  .artist-profile__photo {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+  }
+  .artist-profile__socials {
+    justify-content: center;
+  }
+}
